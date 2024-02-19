@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add new message</title>
+  </head>
+  <body>
+    <form action="/new" method="POST">
+      <label for="messageText">
+        <input
+          type="text"
+          name="messageText"
+          value="<%= locals.message %>"
+          placeholder="Message"
+        />
+      </label>
+      <label for="messageUser">
+        <input
+          type="text"
+          name="messageUser"
+          value="<%= locals.user %>"
+          placeholder="Name"
+        />
+      </label>
+      <button type="submit">talk dirty now</button>
+    </form>
+  </body>
+</html>
